@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING LIST</title>
+    <link rel="stylesheet" href="shopping-list.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-div">
+                <img src="my logo.jpg" alt="book image">
+                <button class="theme-toggle" id="theme-toggle-btn">Dark mode</button>
+            </div>
+            
+            <h1>Shopping List</h1>
+        </header>
+
+        <form id="item-form">
+            <div class="form-control">
+                <input 
+                  type="text" 
+                  class="form-input" 
+                  id="item-input" 
+                  name="item" 
+                  placeholder="Enter Item">
+            </div>
+
+            <select name="priority" id="priority-input" 
+            class="form-input">
+            <option value="0">Select Priority</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+           </select>
+
+           <input type="checkbox" id="checkbox">
+           Recurring Item
+
+           <div class="form-control">
+            <button type="submit" class="btn"></i>+ Add Item</button>
+           </div>
+        </form>
+
+        <div class="filter-tasks">
+            <input 
+              type="text" 
+              class="form-input-filter" 
+              id="filter" placeholder="Filter Items">
+        </div>
+
+        <ul id="item-list" class="items" type="none">
+            <li class="item">
+                Apples
+                <button class="remove-item btn-link text-red">
+                    x
+                </button>
+            </li>
+            <li class="item">
+                Orange Juice
+                <button class="remove-item btn-link text-red">
+                    x
+                </button>
+            <li class="item">
+                Oreos
+                <button class="remove-item btn-link text-red">
+                    x
+                </button>
+            <li class="item">
+                Milk
+                <button class="remove-item btn-link text-red">
+                    x
+                </button>
+            </li>
+        </ul>
+
+        <button id="clear" class="btn-clear">Clear All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

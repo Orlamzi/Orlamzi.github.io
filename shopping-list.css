@@ -1,0 +1,154 @@
+.container{
+    background: transparent;
+    max-width: 500px;
+    height: 800px;
+    border-radius: 45px;
+    padding: 25px;
+    margin: 300px;
+    box-shadow: 0px 0px 50px 2px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    text-align: center;
+}
+.header-div{
+    display: flex;
+    flex-direction: row;
+    gap: 220px;
+}
+.theme-toggle{
+    background: black;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#item-form{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 180px;
+    box-shadow: 2px 2px 10px 3px black;
+}
+
+.form-input{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    box-shadow: 0px 0px 9px 1px black;
+}
+select{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    box-shadow: 0px 0px 9px 1px black;
+    margin-top: 30px;
+}
+#checkbox{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.form-control{
+    margin-top: 15px;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.filter-tasks{
+    margin-top: 20px;
+}
+.form-input-filter{
+    border: none;
+    font-size: 25px;
+    box-shadow: 0px 1px 0px 0px black;
+    width: 100%;
+}
+ul{
+    padding: 0px;
+}
+.item{
+    width: 98%;
+    background: transparent;
+    box-shadow: 0px 0px 9px 1px black;
+    padding: 10px;
+    margin-top: 20px;
+}
+.remove-item{
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bolder;
+    font-size: 22px;
+    cursor: pointer;
+    float: right;
+}
+
+.btn-clear{
+    height: 40px;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 10px;
+    background: black;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+      /* .........THEME CHANGE....... */
+
+/* Dark Theme */
+body.dark-mode{
+    background: rgba(7, 1, 27, 0.942);
+    color: white;
+}
+body.dark-mode .container{
+    background: transparent;
+    color: white;
+}
+body.dark-mode .container header img{
+    box-shadow: 2px 2px 10px 3px white;
+}
+body.dark-mode .container button{
+    background: red;
+    color: white;
+}
+body.dark-mode .container{
+    box-shadow: 0px 0px 50px 2px white;
+}
+body.dark-mode .container .form-input{
+    box-shadow: 0px 0px 3px 1px white;
+    color: white;
+    font-size: large;
+}
+body.dark-mode .container select{
+    box-shadow: 0px 0px 3px 1px white;
+    color: yellow;
+}
+body.dark-mode .container .form-input-filter{
+    background: transparent;
+    border: none;
+    box-shadow: 0px 1px 0px 0px greenyellow;
+    width: 100%;
+}
+body.dark-mode .container .item{
+    box-shadow: 0px 0px 3px 1px white;
+}
+body.dark-mode .container .item .remove-item{
+    background: transparent;
+    color: red;
+}
