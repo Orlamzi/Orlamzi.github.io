@@ -166,7 +166,7 @@ body.dark-mode .container .item .remove-item{
     max-width: 270px;
     width: 95%;
     max-height: 70vh;
-    height: 60vh;
+    height: 70vh;
     border-radius: 15px;
     padding: 10px;
     margin: 30px;
@@ -212,8 +212,8 @@ select{
     margin-top: 10px;
 }
 #checkbox{
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     margin-top: 15px;
 }
 .recurring{
@@ -255,5 +255,20 @@ ul{
     margin-left: 85px;
     margin-top: 5px;
     font-size: 16px;
+}
+footer{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.powered{
+    animation: scrollLeft linear 7s infinite;
+}
+@keyframes scrollLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
 }
