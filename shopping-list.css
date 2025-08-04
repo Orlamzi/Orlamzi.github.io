@@ -1,10 +1,11 @@
 .container{
     background: transparent;
     max-width: 500px;
-    height: 800px;
+    height: auto;
     border-radius: 45px;
     padding: 25px;
     margin: 300px;
+    justify-self: center;
     box-shadow: 0px 0px 50px 2px black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -70,13 +71,10 @@ select{
 }
 .filter-tasks{
     margin-top: 20px;
+    font-size: 30px;
+    color: grey;
 }
-.form-input-filter{
-    border: none;
-    font-size: 25px;
-    box-shadow: 0px 1px 0px 0px black;
-    width: 100%;
-}
+
 ul{
     padding: 0px;
 }
@@ -86,6 +84,9 @@ ul{
     box-shadow: 0px 0px 9px 1px black;
     padding: 10px;
     margin-top: 20px;
+}
+.hidden{
+    display: none;
 }
 .remove-item{
     background: transparent;
@@ -107,6 +108,21 @@ ul{
     font-size: large;
     border-radius: 10px;
     cursor: pointer;
+}
+
+footer{
+    overflow: hidden;
+}
+.powered{
+    animation: scrollLeft linear 7s infinite;
+}
+@keyframes scrollLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
 
       /* .........THEME CHANGE....... */
@@ -231,6 +247,7 @@ select{
 }
 .filter-tasks{
     margin-top: 15px;
+    font-size: 15px;
 }
 .form-input-filter{
     border: none;
@@ -260,16 +277,5 @@ ul{
 footer{
     overflow: hidden;
     margin-top: 20px;
-}
-.powered{
-    animation: scrollLeft linear 7s infinite;
-}
-@keyframes scrollLeft {
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
 }
 }
